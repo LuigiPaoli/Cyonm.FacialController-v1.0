@@ -10,11 +10,11 @@ namespace Cyonm.FacialController.Data
     internal class Connection
     {
 
-        public static string connectionString;
+        public static readonly string connectionString = "data source=localhost\\sqlexpress;Initial Catalog=TESTE;Integrated Security=True";
         public static string queryString;
         public static void Connect(string query, int escolha)
         {
-            connectionString = "data source=localhost\\sqlexpress;Initial Catalog=TESTE;Integrated Security=True";
+            
             queryString = query;
 
             {
@@ -31,6 +31,9 @@ namespace Cyonm.FacialController.Data
                             break;
                         case 3:
                             try { connection.Open(); DataProcess.BuscarFoto_(); } catch (Exception ex) { Console.WriteLine("3 - Erro ao conectar: " + ex.Message); }
+                            break;
+                        case 4:
+                            try { connection.Open(); DataProcess.BuscarBackup_(); } catch (Exception ex) { Console.WriteLine("3 - Erro ao conectar: " + ex.Message); }
                             break;
                     }
                 }

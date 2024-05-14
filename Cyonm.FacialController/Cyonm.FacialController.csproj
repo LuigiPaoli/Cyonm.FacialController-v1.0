@@ -72,11 +72,14 @@
     <Compile Include="Data\DataList.cs" />
     <Compile Include="Data\DataProcess.cs" />
     <Compile Include="Data\Query.cs" />
+    <Compile Include="Entity\FotosBackup.cs" />
     <Compile Include="Entity\FotoUploadQueue.cs" />
     <Compile Include="Entity\InnerFotoEquip.cs" />
     <Compile Include="Entity\SvrEquipamento.cs" />
     <Compile Include="Entity\SvrPessoa.cs" />
     <Compile Include="Funcionalidades.cs" />
+    <Compile Include="Func\BackupFotos.cs" />
+    <Compile Include="Func\EnvioFotos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rep\EnvioFotos\Strings.cs" />

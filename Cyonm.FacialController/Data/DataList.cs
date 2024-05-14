@@ -12,5 +12,6 @@ namespace Cyonm.FacialController.Data
         public static List<Entity.FotoUploadQueue> getFotos;
         public static List<Entity.SvrPessoa> getPessoas;
         public static List<Entity.SvrEquipamento> getEquipamentos;
+        public static List<Entity.FotosBackup> getBackup;
     }
 }

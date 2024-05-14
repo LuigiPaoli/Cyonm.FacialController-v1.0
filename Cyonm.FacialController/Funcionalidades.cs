@@ -13,7 +13,7 @@ namespace Cyonm.FacialController
 
             Console.WriteLine("Escolha a funcionalidade:\n\n");
             Console.WriteLine("1 - Verificar envio de fotos dos cadastros");
-            Console.WriteLine("2 - Acompanhar acessos em tempo real\n");
+            Console.WriteLine("2 - Atualizar backup de fotos\n");
             int escolha = Convert.ToInt32(Console.ReadLine());
             if (escolha > 2)
             {
@@ -26,8 +26,8 @@ namespace Cyonm.FacialController
 
             switch (escolha)
             {
-                case 1: Program.EnvioFotos(); break;
-                case 2: Program.VerificarAcessos(); break;
+                case 1: Func.RelatorioFotos.EnvioFotos(); break;
+                case 2: Func.BackupFotos.SalvarFotos(); break;
             }
         }
     }
